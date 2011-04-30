@@ -39,7 +39,7 @@ path-append() {
 path-prefix() { path-prepend $1; }
 path-suffix() { path-append $1; }
 
-# Copyright (c) 2011 Ingy dot Net <ingy@ingy.net>
+# Copyright © 2011 Ingy dot Net <ingy@ingy.net>
 # 
 # This library is free software, distributed under the ISC License.
 # See the LICENSE file distributed with this library.

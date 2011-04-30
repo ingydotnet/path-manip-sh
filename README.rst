@@ -13,10 +13,10 @@ When components are added to the PATH, they are first removed if they already ex
 Usage
 -----
 
-In your .bashrc:
+In your .bashrc::
 
-      source /path/to/path-manip-sh/path-manip.sh
-      path-prepend /path/to/some/new/bin/
+    source /path/to/path-manip-sh/path-manip.sh
+    path-prepend /path/to/some/new/bin/
 
 Functions
 ---------
@@ -44,7 +44,7 @@ Ingy dot Net <ingy@ingy.net>
 Copyright
 ---------
 
-Copyright (c) 2011. Ingy dot Net
+Copyright © 2011. Ingy dot Net
 
 License
 -------
