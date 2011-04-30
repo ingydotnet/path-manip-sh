@@ -49,10 +49,16 @@ path-prepend <component> [<variable>]:
 path-append <component> [<variable>]:
     Add component to end of PATH (after removing any instances of it)
 
+Repository
+----------
+
+This code can be found at https://github.com/ingydotnet/path-manip-sh
+
 See Also
 --------
 
 * https://github.com/ingydotnet/rel2abs-sh
+* https://github.com/rra/c-tap-harness
 
 Author
 ------
