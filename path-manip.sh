@@ -3,6 +3,8 @@
 
 # List each directory in your PATH, one per line
 path-list() {
+    local path
+    local d
     if [ "$#" -eq 1 ]; then eval path=\$$1; else path="$PATH"; fi
     for d in `echo $path | sed -e 's/:/ /g'`; do
         echo "$d"
@@ -11,8 +13,10 @@ path-list() {
 
 # Remove a directory from your PATH
 path-remove() {
+    local path
+    local d
+    local p=""
     if [ "$#" -eq 2 ]; then eval path=\$$2; else path="$PATH"; fi
-    p=""
     for d in `echo $path | sed -e 's/:/ /g'`; do
         if [ "$d" != "$1" ]; then
             if [ "$p" = "" ]; then
@@ -27,6 +31,7 @@ path-remove() {
 
 # Add a directory to the start of your PATH while removing old references.
 path-prepend() {
+    local path
     path-remove $*
     if [ "$#" -eq 2 ]; then eval path=\$$2; else path="$PATH"; fi
     path="$1:$path"
@@ -35,6 +40,7 @@ path-prepend() {
 
 # Add a directory to the end of your PATH while removing old references.
 path-append() {
+    local path
     path-remove $*
     if [ "$#" -eq 2 ]; then eval path=\$$2; else path="$PATH"; fi
     path="$path:$1"
