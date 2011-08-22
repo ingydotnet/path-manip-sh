@@ -1,6 +1,6 @@
 #!/bin/bash
-. ./tests/libtap.sh
-. ./path-manip.sh
+source ./tests/libtap.sh
+source ./path-manip.sh
 
 plan 8
 
