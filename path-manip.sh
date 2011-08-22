@@ -47,10 +47,6 @@ path-append() {
     if [ "$#" -eq 2 ]; then eval $2=\$path; else PATH="$path"; fi
 }
 
-# DEPRECATED 2011/04/29
-path-prefix() { path-prepend "$1"; }
-path-suffix() { path-append "$1"; }
-
 # Copyright © 2011 Ingy dot Net <ingy@ingy.net>
 # 
 # This library is free software, distributed under the ISC License.
